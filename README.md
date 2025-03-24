@@ -1,0 +1,2 @@
+# MapMetrics-iOS
+XCFramework
