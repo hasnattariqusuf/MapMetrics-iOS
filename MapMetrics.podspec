@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Hasnat Tariq" => "hasnattariqusuf@gmail.com" }
   spec.platform     = :ios, "12.0"
-  
+    
   # Fixed: Changed 's.version' to 'spec.version'
   spec.source = {
     :git => "https://github.com/hasnattariqusuf/MapMetrics-iOS.git",
@@ -18,6 +18,12 @@ Pod::Spec.new do |spec|
 
   # Prevent CocoaPods from moving or modifying the framework
   spec.preserve_paths = "MapMetrics.xcframework"
+    spec.exclude_files = [
+        '**/.DS_Store',
+        '**/bazel-out',
+        '**/*.lproj'
+  ]
+
 
   # Ensures it is correctly embedded when installed
   spec.pod_target_xcconfig = {
