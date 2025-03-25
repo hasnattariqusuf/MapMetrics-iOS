@@ -9,7 +9,10 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   
   # Fixed: Changed 's.version' to 'spec.version'
-  spec.source = { :git => "https://github.com/hasnattariqusuf/MapMetricsNative-iOS.git", :tag => spec.version.to_s }
+  spec.source = {
+    :git => "https://github.com/hasnattariqusuf/MapMetrics-iOS.git",
+    :tag => spec.version.to_s
+  }
 
   spec.vendored_frameworks = "MapMetrics.xcframework"
 
