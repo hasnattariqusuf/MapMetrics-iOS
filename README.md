@@ -6,7 +6,7 @@ Add this to your Podfile:
 
 ```ruby
 target 'YourApp' do  
-  pod 'MapMetrics', '~> 0.0.2'  # Use the latest version  
+  pod 'MapMetrics', '~> 0.0.1'  # Use the latest version  
   # OR
   pod 'MapMetrics', :git => 'https://github.com/hasnattariqusuf/MapMetrics-iOS.git', :tag => '0.0.1'
 end
